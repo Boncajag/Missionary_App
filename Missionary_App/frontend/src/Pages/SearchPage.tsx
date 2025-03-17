@@ -1,7 +1,7 @@
 "use client";
-import { StatusBar } from "./StatusBar";
-import { SearchForm } from "./SearchForm";
-import { AutocorrectionBar } from "./AutocorrectionBar";
+import { StatusBar } from "../Components/StatusBar";
+import { SearchForm } from "../Components/SearchForm";
+import { AutocorrectionBar } from "../Components/AutocorrectionBar";
 
 function SearchPage() {
 

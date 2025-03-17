@@ -1,7 +1,7 @@
 "use client";
 
-import { StatusBar } from "./Components/StatusBar";
-import { PostCard } from "./PostCard";
+import { StatusBar } from "../Components/StatusBar";
+import { PostCard } from "../Components/PostCard";
 
 const InboxPage = () => {
   const posts = [
