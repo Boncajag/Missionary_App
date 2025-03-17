@@ -1,10 +1,11 @@
 import * as React from "react";
 
 interface StatusBarProps {
-  time?: string;
+  time?: string; // Make time optional
 }
 
-const StatusBar: React.FC<StatusBarProps> = ({ time }) => {
+
+export const StatusBar: React.FC<StatusBarProps> = ({ time }) => {
   return (
     <header className="flex flex-col justify-center self-stretch p-2.5 w-full">
       <div className="pt-5 w-full bg-blue-950 min-h-[101px]">
@@ -30,5 +31,3 @@ const StatusBar: React.FC<StatusBarProps> = ({ time }) => {
     </header>
   );
 };
-
-export default StatusBar;

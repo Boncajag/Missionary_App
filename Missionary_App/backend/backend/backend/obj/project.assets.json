@@ -2892,19 +2892,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/brandonfromm/.nuget/packages/": {}
+    "/Users/christianchristensen/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/brandonfromm/Documents/GitHub/Missionary_App/Missionary_App/backend/backend/backend/backend.csproj",
+      "projectUniqueName": "/Users/christianchristensen/RiderProjects/Missionary_App/Missionary_App/backend/backend/backend/backend.csproj",
       "projectName": "backend",
-      "projectPath": "/Users/brandonfromm/Documents/GitHub/Missionary_App/Missionary_App/backend/backend/backend/backend.csproj",
-      "packagesPath": "/Users/brandonfromm/.nuget/packages/",
-      "outputPath": "/Users/brandonfromm/Documents/GitHub/Missionary_App/Missionary_App/backend/backend/backend/obj/",
+      "projectPath": "/Users/christianchristensen/RiderProjects/Missionary_App/Missionary_App/backend/backend/backend/backend.csproj",
+      "packagesPath": "/Users/christianchristensen/.nuget/packages/",
+      "outputPath": "/Users/christianchristensen/RiderProjects/Missionary_App/Missionary_App/backend/backend/backend/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/brandonfromm/.nuget/NuGet/NuGet.Config"
+        "/Users/christianchristensen/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -2981,7 +2981,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.406/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.405/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
