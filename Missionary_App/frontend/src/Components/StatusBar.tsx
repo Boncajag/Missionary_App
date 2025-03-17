@@ -1,8 +1,9 @@
 import * as React from "react";
 
 interface StatusBarProps {
-  time: string;
+  time?: string; // Make time optional
 }
+
 
 export const StatusBar: React.FC<StatusBarProps> = ({ time }) => {
   return (

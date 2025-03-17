@@ -1,13 +1,11 @@
 "use client";
-import * as React from "react";
-import { StatusBar } from "../Components/StatusBar";
-import { SearchForm } from "../Components/SearchForm";
-import { KeyboardLayout } from "../Components/KeyboardLayout";
-import { AutocorrectionBar } from "../Components/AutocorrectionBar";
-import { HomeIndicator } from "../Components/HomeIndicator";
+import { StatusBar } from "./StatusBar";
+import { SearchForm } from "./SearchForm";
+import { AutocorrectionBar } from "./AutocorrectionBar";
 
 function SearchPage() {
-  return (
+
+    return (
     <main className="flex overflow-hidden flex-col mx-auto w-full bg-white max-w-[480px]">
       <section className="flex flex-col justify-center py-2.5 w-full">
         <StatusBar />
@@ -22,7 +20,6 @@ function SearchPage() {
         <div className="flex absolute inset-x-0 top-2/4 z-0 items-center pt-1.5 w-full -translate-y-2/4 bg-neutral-600 bg-opacity-90 min-h-[336px] translate-x-[0%]" />
         <AutocorrectionBar />
         <div className="flex z-0 w-full min-h-[5px]" />
-        <KeyboardLayout />
         <div className="flex z-0 gap-10 justify-between items-start pt-7 pr-6 pl-5 w-full h-[55px]">
           <img
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/cdfa213bc76121f2964bd9e0317ae4fec0470a450d9b9624d6903c9fcb122648?placeholderIfAbsent=true&apiKey=a90227eb987c4a7db18d4ddf65aaf737"
@@ -35,7 +32,6 @@ function SearchPage() {
             alt="Microphone"
           />
         </div>
-        <HomeIndicator />
       </section>
     </main>
   );

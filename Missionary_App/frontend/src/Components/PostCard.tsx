@@ -1,3 +1,5 @@
+import { ImageGallery } from "./ImageGallery"; // Adjust the path if needed
+
 interface PostCardProps {
   avatarUrl: string;
   name: string;
