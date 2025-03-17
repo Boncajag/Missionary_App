@@ -1,8 +1,8 @@
 "use client";
 import * as React from "react";
-import StatusBar from "./StatusBar";
-import ProfileHeader from "./ProfileHeader";
-import EmailContent from "./EmailContent";
+import StatusBar from "../Components/StatusBar";
+import ProfileHeader from "../Components/ProfileHeader";
+import EmailContent from "../Components/EmailContent";
 
 function ReadEmailPage() {
   return (

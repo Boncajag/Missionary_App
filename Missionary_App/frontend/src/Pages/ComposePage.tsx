@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import { StatusBar } from "./StatusBar";
+import { StatusBar } from "./Components/StatusBar";
 import { ProfileSection } from "./ProfileSection";
 import { ComposeArea } from "./ComposeArea";
 import { ImageUploadSection } from "./ImageUploadSection";
