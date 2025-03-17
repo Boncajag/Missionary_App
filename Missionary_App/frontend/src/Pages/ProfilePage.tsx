@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import StatusBar from "./StatusBar";
-import ProfileHeader from "./ProfileHeader";
+import StatusBar from "./Components/StatusBar";
+import ProfileHeader from "./Pages/ProfileHeader";
 import ProfileInfo from "./ProfileInfo";
 import PostsList from "./PostsList";
 

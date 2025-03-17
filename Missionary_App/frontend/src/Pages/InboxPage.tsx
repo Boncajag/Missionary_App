@@ -1,6 +1,6 @@
 "use client";
 
-import { StatusBar } from "./StatusBar";
+import { StatusBar } from "./Components/StatusBar";
 import { PostCard } from "./PostCard";
 
 const InboxPage = () => {

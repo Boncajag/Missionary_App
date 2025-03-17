@@ -1,7 +1,7 @@
 "use client";
 import * as React from "react";
-import StatusBar from "./StatusBar";
-import MenuItem from "./MenuItem";
+import StatusBar from "../Components/StatusBar";
+import MenuItem from "../Components/MenuItem";
 
 function Sidebar() {
   const menuItems = [

@@ -1,10 +1,10 @@
 "use client";
 import * as React from "react";
-import { StatusBar } from "./StatusBar";
-import { SearchForm } from "./SearchForm";
-import { KeyboardLayout } from "./KeyboardLayout";
-import { AutocorrectionBar } from "./AutocorrectionBar";
-import { HomeIndicator } from "./HomeIndicator";
+import { StatusBar } from "../Components/StatusBar";
+import { SearchForm } from "../Components/SearchForm";
+import { KeyboardLayout } from "../Components/KeyboardLayout";
+import { AutocorrectionBar } from "../Components/AutocorrectionBar";
+import { HomeIndicator } from "../Components/HomeIndicator";
 
 function SearchPage() {
   return (

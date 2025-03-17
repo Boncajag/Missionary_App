@@ -1,8 +1,8 @@
 "use client";
 import * as React from "react";
-import { StatusBar } from "./StatusBar";
-import { LoginForm } from "./LoginForm";
-import { KeyboardLayout } from "./KeyboardLayout";
+import { StatusBar } from "../Components/StatusBar";
+import { LoginForm } from "../Components/LoginForm";
+import { KeyboardLayout } from "../Components/KeyboardLayout";
 
 const LoginPage: React.FC = () => {
   return (
