@@ -2,8 +2,6 @@
 import * as React from "react";
 import { StatusBar } from "../Components/StatusBar";
 import { LoginForm } from "../Components/LoginForm";
-import { KeyboardLayout } from "../Components/KeyboardLayout";
-
 const LoginPage: React.FC = () => {
   return (
     <div className="flex overflow-hidden flex-col mx-auto w-full bg-white max-w-[480px]">
@@ -14,7 +12,6 @@ const LoginPage: React.FC = () => {
         alt="Back"
       />
       <LoginForm />
-      <KeyboardLayout />
     </div>
   );
 };

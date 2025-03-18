@@ -1,6 +1,7 @@
 "use client";
+
 import * as React from "react";
-import StatusBar from "../Components/StatusBar";
+import { StatusBar } from "../Components/StatusBar";
 import ProfileHeader from "../Components/ProfileHeader";
 import EmailContent from "../Components/EmailContent";
 

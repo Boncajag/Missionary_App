@@ -1,7 +1,6 @@
 "use client";
-import * as React from "react";
-import { StatusBar } from "./Components/StatusBar";
-import { TemplateGrid } from "./TemplateGrid";
+import { StatusBar } from "../Components/StatusBar";
+import { TemplateGrid } from "../Components/TemplateGrid";
 
 function TemplatePage() {
   return (

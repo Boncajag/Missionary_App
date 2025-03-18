@@ -1,0 +1,77 @@
+.header {
+    width: 100vw;
+    height: 70px;
+    background-color: #002952;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Keep the menu button on the left */
+.menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+}
+
+/* Center the logo perfectly */
+.logo-container {
+    position: absolute;
+    left: 48.5%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+/* Ensures logo resizes properly */
+.logo {
+    height: 50px;
+    max-width: 100%;
+}
+
+/* Dropdown menu styles */
+.menu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 200px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px 0;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 10px 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #002952;
+    font-weight: bold;
+}
+
+/* Keeps the write icon on the right */
+.write-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 40px; /* Adjust padding to avoid pushing it too far */
+}
