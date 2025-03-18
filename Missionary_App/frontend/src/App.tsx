@@ -2,6 +2,9 @@ import { Routes, Route } from "react-router-dom";
 import Header from "./Header";
 import InboxPage from "./Pages/InboxPage";
 import SearchPage from "./Pages/SearchPage";
+import FriendsPage from "./Pages/FriendsPage";
+import ProfilePage from "./Pages/ProfilePage";
+import TemplatePage from "./Pages/TemplatePage";
 
 function App() {
     return (
@@ -10,7 +13,9 @@ function App() {
             <Routes>
                 <Route path="/" element={<InboxPage />} />
                 <Route path="/search" element={<SearchPage />} />
-
+                <Route path="/friends" element={<FriendsPage />} />
+                <Route path="/profile" element={<ProfilePage />} />
+                <Route path="/write" element={<TemplatePage />} />
             </Routes>
         </>
     );

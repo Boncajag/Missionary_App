@@ -1,8 +1,8 @@
 "use client";
 
 import * as React from "react";
-import { StatusBar } from "./Components/StatusBar";
-import { FriendProfile } from "./FriendProfile";
+import { StatusBar } from "../Components/StatusBar";
+import { FriendProfile } from "../Components/FriendProfile";
 
 const FriendsPage: React.FC = () => {
   const friends = [

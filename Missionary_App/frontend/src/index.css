@@ -10,7 +10,7 @@
 /* Apply the global background color */
 body {
   margin: 0;
-  padding: 0;
+  padding-top: 100px; /* Adjust padding to prevent content overlap */
   background-color: var(--background-color);
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   color: var(--text-color);
@@ -48,6 +48,7 @@ h1 {
   font-weight: bold;
   color: var(--primary-color);
   text-align: center;
+  margin-bottom: 40px; /* Space between title and first input */
 }
 
 /* Style profile name */
@@ -83,4 +84,99 @@ h1 {
   height: 100px;
   object-fit: cover;
   border-radius: 8px;
+}
+
+input {
+  border-radius: 50px; /* Keeps the pill shape */
+  padding: 15px 20px;
+  width: 100%;
+  max-width: 400px;
+  font-size: 18px;
+  border: 2px solid #002952; /* Navy blue border */
+  background: #EAEAEA; /* Default grayish background */
+  color: #002952; /* Navy blue text */
+  outline: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+input{
+  margin-bottom: 20px; /* Adds space between each pill */
+}
+
+input:hover {
+  background: #F5F5F5; /* Slightly whiter smokey color */
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  margin: auto; /* Centers the form */
+}
+
+.search-container h1 {
+  text-align: center;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 50px;
+  font-size: 18px;
+  border: 2px solid #002952;
+  background: #f0f0f0;
+  text-align: left;
+  margin-bottom: 15px; /* Space between inputs */
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.search-button {
+  border-radius: 50px;
+  padding: 15px 20px;
+  width: 100%;
+  max-width: 200px;
+  background: #002952; /* Dark Navy */
+  font-size: 18px;
+  font-weight: normal;
+  border: 3px solid #002952;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease-in-out;
+  z-index: 1; /* Ensures text stays on top */
+}
+
+.search-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%; /* Starts outside from the left */
+  width: 100%;
+  height: 100%;
+  background: white;
+  transition: left 0.4s ease-in-out; /* Moves from left to right */
+  z-index: -1; /* Ensures background is behind text */
+}
+
+.search-button:hover {
+  color: #002952 !important; /* Ensures text turns blue */
+}
+
+.search-button:hover::before {
+  left: 0; /* Moves background in from left to right */
 }

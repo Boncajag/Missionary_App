@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
-import StatusBar from "./Components/StatusBar";
-import ProfileHeader from "./Pages/ProfileHeader";
-import ProfileInfo from "./ProfileInfo";
-import PostsList from "./PostsList";
+import ProfileHeader from "../Components/ProfileHeader";
+import ProfileInfo from "../Components/ProfileInfo";
+import PostsList from "../Components/PostsList";
+import { StatusBar } from "../Components/StatusBar";
 
 const ProfilePage: React.FC = () => {
   return (

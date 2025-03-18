@@ -6,8 +6,7 @@ import { PostCard } from "../Components/PostCard";
 const InboxPage = () => {
   const posts = [
     {
-      avatarUrl:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/ef551e9c5f1d70ea3b9df8ac24def55a8eccfe5aed04362c00fc6219ecfc9915?placeholderIfAbsent=true&apiKey=a90227eb987c4a7db18d4ddf65aaf737",
+      avatarUrl: "/avatars/E1.png",
       name: "Elder Johnson",
       mission: "San Jose South Mission",
       date: "January 8th, 2020",
@@ -19,9 +18,8 @@ const InboxPage = () => {
       ],
     },
     {
-      avatarUrl:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/ef551e9c5f1d70ea3b9df8ac24def55a8eccfe5aed04362c00fc6219ecfc9915?placeholderIfAbsent=true&apiKey=a90227eb987c4a7db18d4ddf65aaf737",
-      name: "Elder Johnson",
+      avatarUrl: "/avatars/S1.png",
+      name: "Sister Smith",
       mission: "San Jose South Mission",
       date: "January 8th, 2020",
       message: `"hey everyone! \nThis week I ate the best taco I've ever had in my life. It strengthened my testimony more than I knew it could..."`,
@@ -32,9 +30,8 @@ const InboxPage = () => {
       ],
     },
     {
-      avatarUrl:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/ef551e9c5f1d70ea3b9df8ac24def55a8eccfe5aed04362c00fc6219ecfc9915?placeholderIfAbsent=true&apiKey=a90227eb987c4a7db18d4ddf65aaf737",
-      name: "Elder Johnson",
+      avatarUrl: "/avatars/E2.png",
+      name: "Elder Anderson",
       mission: "San Jose South Mission",
       date: "January 8th, 2020",
       message: `"hey everyone! \nThis week I ate the best taco I've ever had in my life. It strengthened my testimony more than I knew it could..."`,
@@ -47,28 +44,26 @@ const InboxPage = () => {
   ];
 
   return (
-    <main className="flex flex-col items-start mx-auto w-full bg-white max-w-[480px]">
-      <StatusBar />
-      <h1 className="z-10 self-center mt-0 text-3xl font-semibold text-slate-100">
-        Inbox
-      </h1>
-      <img
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/d3a7d00675114a9bf2ca39835903c760505e63b61a91443155e84940e5ad4d9f?placeholderIfAbsent=true&apiKey=a90227eb987c4a7db18d4ddf65aaf737"
-        alt="Inbox icon"
-        className="object-contain mt-0 ml-6 aspect-square w-[30px]"
-      />
-      {posts.map((post, index) => (
-        <PostCard
-          key={index}
-          avatarUrl={post.avatarUrl}
-          name={post.name}
-          mission={post.mission}
-          date={post.date}
-          message={post.message}
-          images={post.images}
-        />
-      ))}
-    </main>
+      <main className="flex flex-col items-center mx-auto w-full bg-white max-w-[480px] px-4">
+        <StatusBar/>
+        <h1 className="z-10 text-center mt-4 text-3xl font-semibold text-blue-950">
+          Inbox
+        </h1>
+        <div className="flex flex-col gap-60 w-full">
+          {posts.map((post, index) => (
+              <PostCard
+                  key={index}
+                  avatarUrl={post.avatarUrl}
+                  name={post.name}
+                  mission={post.mission}
+                  date={post.date}
+                  message={post.message}
+                  images={post.images}
+              />
+          ))}
+        </div>
+      </main>
+
   );
 };
 
