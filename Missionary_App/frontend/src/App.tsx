@@ -5,6 +5,9 @@ import SearchPage from "./Pages/SearchPage";
 import FriendsPage from "./Pages/FriendsPage";
 import ProfilePage from "./Pages/ProfilePage";
 import TemplatePage from "./Pages/TemplatePage";
+import ComposePage from "./Pages/ComposePage";
+import LoginPage from "./Pages/LoginPage";
+import ReadEmailPage from "./Pages/ReadEmailPage";
 
 function App() {
     return (
@@ -16,6 +19,9 @@ function App() {
                 <Route path="/friends" element={<FriendsPage />} />
                 <Route path="/profile" element={<ProfilePage />} />
                 <Route path="/write" element={<TemplatePage />} />
+                <Route path="/compose" element={<ComposePage />} />
+                <Route path="/login" element={<LoginPage />} />
+                <Route path="/reademail" element={<ReadEmailPage />} />
             </Routes>
         </>
     );

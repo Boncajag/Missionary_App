@@ -1,10 +1,10 @@
 "use client";
 import * as React from "react";
-import { StatusBar } from "./Components/StatusBar";
-import { ProfileSection } from "./ProfileSection";
-import { ComposeArea } from "./ComposeArea";
-import { ImageUploadSection } from "./ImageUploadSection";
-import { PostButton } from "./PostButton";
+import { StatusBar } from "../Components/StatusBar";
+import { ProfileSection } from "../Components/ProfileSection";
+import { ComposeArea } from "../Components/ComposeArea";
+import { ImageUploadSection } from "../Components/ImageUploadSection";
+import { PostButton } from "../Components/PostButton";
 
 const ComposePage: React.FC = () => {
   return (
