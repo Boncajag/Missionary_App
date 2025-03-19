@@ -13,7 +13,7 @@ const InboxPage = () => {
       try {
         const response = await fetch("https://localhost:5000/api/Missionary/allData");  // API endpoint
         const data = await response.json();  // Parse the JSON response
-
+        console.log(data);
         // Set the posts in the state
         setPosts(data.posts);  // Assuming the posts are in `data.posts`
       } catch (error) {
