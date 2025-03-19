@@ -24,13 +24,13 @@ function Sidebar() {
           alt="Back"
         />
       </button>
-      <nav className="mt-4 ml-2.5 w-full text-lg font-semibold tracking-tight leading-none text-white bg-blue-950 max-w-[301px] pb-[583px]">
+     <nav className="mt-4 ml-2.5 w-full text-lg font-semibold tracking-tight leading-none text-white bg-blue-950 max-w-[301px] pb-[583px]">
         {menuItems.map((item, index) => (
           <MenuItem
             key={index}
             icon={item.icon}
             title={item.title}
-            isLast={index === menuItems.length - 1}
+            isLast={index === menuItems.length - 1} 
           />
         ))}
       </nav>
