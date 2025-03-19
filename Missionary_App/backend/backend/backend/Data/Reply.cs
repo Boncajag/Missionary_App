@@ -11,7 +11,7 @@ public class Reply
     [Required]
     public int user_id { get; set; }
     [Required]
-    public string reply_content { get; set; }
+    public string? reply_content { get; set; }
     [Required]
     public DateTime sent_at { get; set; }
     
