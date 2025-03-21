@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\Data",
+    "\\Migrations",
     "\\Properties"
   ],
-  "SelectedNode": "\\bin",
+  "SelectedNode": "\\Migrations\\MissionaryAppContextModelSnapshot.cs",
   "PreviewInSolutionExplorer": false
 }
