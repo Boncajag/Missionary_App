@@ -8,25 +8,25 @@ public class User
     [Key]
     public int user_id  { get; set; }
     [Required]
-    public string username { get; set; }
+    public string? username { get; set; }
     [Required]
-    public string password { get; set; }
+    public string? password { get; set; }
     [Required]
-    public string email { get; set; }
+    public string? email { get; set; }
     [Required]
-    public string first_name { get; set; }
+    public string? first_name { get; set; }
     [Required]
-    public string last_name { get; set; }
+    public string? last_name { get; set; }
     [Required]
-    public string mission { get; set; }
+    public string? mission { get; set; }
     [Required]
-    public string home_city { get; set; }
+    public string? home_city { get; set; }
     [Required]
-    public string  home_state  { get; set; }
+    public string?  home_state  { get; set; }
     [Required]
-    public string home_country { get; set; }
+    public string? home_country { get; set; }
     [Required]
-    public string birthday { get; set; }
+    public string? birthday { get; set; }
     [Required]
-    public byte[] profile_picture { get; set; }
+    public byte[]? profile_picture { get; set; }
 }
