@@ -1,0 +1,6 @@
+# Ignore Visual Studio files
+backend/backend/.vs/
+backend/backend/backend/bin/
+backend/backend/backend/obj/
+backend/backend/backend/ApiEndpoints.json
+backend/backend/backend/EndpointInfo/
