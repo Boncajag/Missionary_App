@@ -1,19 +1,15 @@
 "use client";
-import * as React from "react";
-import { StatusBar } from "../Components/StatusBar";
-import { LoginForm } from "../Components/LoginForm";
+import React from "react";
+
 const LoginPage: React.FC = () => {
-  return (
-    <div className="flex overflow-hidden flex-col mx-auto w-full bg-white max-w-[480px]">
-      <StatusBar />
-      <img
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/d3a7d00675114a9bf2ca39835903c760505e63b61a91443155e84940e5ad4d9f?placeholderIfAbsent=true&apiKey=a90227eb987c4a7db18d4ddf65aaf737"
-        className="object-contain z-10 mt-0 ml-3.5 aspect-square w-[30px]"
-        alt="Back"
-      />
-      <LoginForm />
-    </div>
-  );
+    return (
+        <div className="login-container">
+            <h1>Login</h1>
+            <input className="login-input" type="text" placeholder="Username" />
+            <input className="login-input" type="password" placeholder="Password" />
+            <button className="search-button">Login</button>
+        </div>
+    );
 };
 
 export default LoginPage;

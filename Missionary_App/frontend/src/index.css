@@ -180,3 +180,29 @@ input:hover {
 .search-button:hover::before {
   left: 0; /* Moves background in from left to right */
 }
+
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  margin: auto; /* Centers the form */
+  padding: 20px;
+  transform: translateX(-15px); /* Slightly shifts the container to the left */
+
+}
+
+.login-input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 50px;
+  font-size: 18px;
+  border: 2px solid #002952;
+  background: #f0f0f0;
+  text-align: left;
+  margin-bottom: 15px; /* Space between inputs */
+}
