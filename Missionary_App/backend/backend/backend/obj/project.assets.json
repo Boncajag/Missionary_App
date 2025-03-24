@@ -30,9 +30,7 @@
             "related": ".xml"
           }
         },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        "frameworkReferences": ["Microsoft.AspNetCore.App"]
       },
       "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
         "type": "package",
@@ -818,9 +816,7 @@
             "related": ".pdb;.xml"
           }
         },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        "frameworkReferences": ["Microsoft.AspNetCore.App"]
       },
       "Swashbuckle.AspNetCore.SwaggerGen/6.6.2": {
         "type": "package",
@@ -850,9 +846,7 @@
             "related": ".pdb;.xml"
           }
         },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        "frameworkReferences": ["Microsoft.AspNetCore.App"]
       },
       "System.CodeDom/4.4.0": {
         "type": "package",
@@ -2892,30 +2886,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\annay\\.nuget\\packages\\": {},
+    "C:\\Users\\GetTD\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\annay\\OneDrive\\Documents\\School\\IS Core\\IS 401\\Missionary_App\\Missionary_App\\Missionary_App\\backend\\backend\\backend\\backend.csproj",
+      "projectUniqueName": "C:\\Users\\GetTD\\OneDrive\\Documents\\BYU\\IS Core\\IS 401\\Sprint\\Missionary_App\\Missionary_App\\backend\\backend\\backend\\backend.csproj",
       "projectName": "backend",
-      "projectPath": "C:\\Users\\annay\\OneDrive\\Documents\\School\\IS Core\\IS 401\\Missionary_App\\Missionary_App\\Missionary_App\\backend\\backend\\backend\\backend.csproj",
-      "packagesPath": "C:\\Users\\annay\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\annay\\OneDrive\\Documents\\School\\IS Core\\IS 401\\Missionary_App\\Missionary_App\\Missionary_App\\backend\\backend\\backend\\obj\\",
+      "projectPath": "C:\\Users\\GetTD\\OneDrive\\Documents\\BYU\\IS Core\\IS 401\\Sprint\\Missionary_App\\Missionary_App\\backend\\backend\\backend\\backend.csproj",
+      "packagesPath": "C:\\Users\\GetTD\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\GetTD\\OneDrive\\Documents\\BYU\\IS Core\\IS 401\\Sprint\\Missionary_App\\Missionary_App\\backend\\backend\\backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\annay\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\GetTD\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
-      "originalTargetFrameworks": [
-        "net8.0"
-      ],
+      "originalTargetFrameworks": ["net8.0"],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -2926,16 +2922,14 @@
         }
       },
       "warningProperties": {
-        "warnAsError": [
-          "NU1605"
-        ]
+        "warnAsError": ["NU1605"]
       },
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -2989,7 +2983,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
