@@ -1,6 +1,6 @@
 "use client";
-import * as React from "react";
-import StatusBar from "../Components/StatusBar";
+// import * as React from "react";
+//import StatusBar from "../Components/StatusBar";
 import MenuItem from "../Components/MenuItem";
 
 function Sidebar() {
@@ -15,7 +15,6 @@ function Sidebar() {
   return (
     <aside className="flex flex-col items-start mx-auto w-full bg-slate-100 max-w-[480px]">
       <div className="flex flex-col justify-center self-stretch p-2.5 w-full">
-        <StatusBar />
       </div>
       <button aria-label="Back" className="z-10 mt-0 ml-6">
         <img
