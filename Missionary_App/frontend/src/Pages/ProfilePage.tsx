@@ -10,10 +10,10 @@ import { StatusBar } from "../Components/StatusBar";
 //If not, let me know. This same format for calling data can be used for other pages as well. 
 // pages/missionary.tsx
 
-import { User, Post, Reply } from '../types'; // Adjust path if necessary
+import { User, Post, Reply } from '../types/User'; // Adjust path if necessary
 import { useEffect, useState } from 'react';
 
-function MissionaryData() {
+/*function MissionaryData() {
   const [users, setUsers] = useState<User[]>([]);
   const [posts, setPosts] = useState<Post[]>([]);
   const [replies, setReplies] = useState<Reply[]>([]);
@@ -64,6 +64,7 @@ function MissionaryData() {
 
 export default MissionaryData;
 
+*/
 
 const ProfilePage: React.FC = () => {
   return (
@@ -77,3 +78,4 @@ const ProfilePage: React.FC = () => {
 };
 
 export default ProfilePage;
+
