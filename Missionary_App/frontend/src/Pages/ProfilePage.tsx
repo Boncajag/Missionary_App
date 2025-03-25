@@ -1,81 +1,71 @@
-"use client";
-import React from "react";
-import ProfileHeader from "../Components/ProfileHeader";
-import ProfileInfo from "../Components/ProfileInfo";
-import PostsList from "../Components/PostsList";
+import { useState, useEffect } from "react";
 import { StatusBar } from "../Components/StatusBar";
+import { motion } from "framer-motion";
+import { Pencil } from "lucide-react";
 
-//I'm not entirely sure what the goal is here, but you can work with this code. There are some errors showing up for me...
-//But I think it's because I'm missing a download or something, so hopefully it works for you.
-//If not, let me know. This same format for calling data can be used for other pages as well. 
-// pages/missionary.tsx
+const ProfilePage = () => {
+    const [user, setUser] = useState<any>(null);
+    const [posts, setPosts] = useState<any[]>([]);
 
-import { User, Post, Reply } from '../types/User'; // Adjust path if necessary
-import { useEffect, useState } from 'react';
+    useEffect(() => {
+        const fetchProfile = async () => {
+            try {
+                const response = await fetch("https://localhost:5000/api/Missionary/allData");
+                const data = await response.json();
+                setUser(data.users[0]); // Assuming the first user is the current user
+                setPosts(data.posts.filter((post: { user_id: number }) => post.user_id === data.users[0].user_id));
+            } catch (error) {
+                console.error("Error fetching profile data:", error);
+            }
+        };
+        fetchProfile();
+    }, []);
 
-/*function MissionaryData() {
-  const [users, setUsers] = useState<User[]>([]);
-  const [posts, setPosts] = useState<Post[]>([]);
-  const [replies, setReplies] = useState<Reply[]>([]);
+    return (
+        <main
+            className="flex flex-col items-center justify-center mx-auto w-full bg-white max-w-[480px] px-4 py-8 text-center">
+            <StatusBar/>
+            <h1 className="text-3xl font-semibold text-blue-950">Profile</h1>
+            {user && (
+                <div className="flex flex-col items-center gap-4 mt-6">
+                    <div className="profile-image-container">
+                        <img
+                            src={`/avatars/${user.user_id}.png`}
+                            alt="Profile Picture"
+                            className="profile-image"
+                        />
+                    </div>
+                    <div className="profile-info">
+                        {Object.entries(user).filter(([key]) => key !== "profile_picture").map(([key, value]) => (
+                            <div key={key} className="profile-pill">
+                                <span>{key.replace("_", " ")}: {String(value)}</span>
+                                <Pencil className="pencil-icon w-5 h-5"/>
+                            </div>
+                        ))}
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await fetch("https://localhost:5000/api/Missionary/allData");
-      const data = await response.json();
+                    </div>
+                </div>
+            )}
+            <h2 className="text-2xl font-semibold text-blue-950 mt-8">My Posts</h2>
+            <section className="flex flex-col items-center gap-4 mt-4 w-full">
+                {posts.map((post, index) => (
+                    <motion.div
+                        key={index}
+                        className="post-card text-center"
+                        whileHover={{scale: 1.02}}
+                    >
+                        <h3 className="post-title">{post.title}</h3>
+                        <p className="post-text">
+                            {post.text.split(" ").slice(0, 10).join(" ")}...
+                        </p>
+                        <span className="post-date">{new Date(post.created_at).toLocaleDateString()}</span>
+                    </motion.div>
+                ))}
+            </section>
 
-      setUsers(data.users);
-      setPosts(data.posts);
-      setReplies(data.replies);
-    };
 
-    fetchData();
-  }, []);
-
-  return (
-    <>
-    <div>
-      <h2>Users</h2>
-      {users.map((user) => (
-        <div key={user.user_id}>
-          <h3>{user.first_name} {user.last_name}</h3>
-          <p>{user.mission} - {user.home_city}, {user.home_state}</p>
-        </div>
-      ))}
-
-      <h2>Posts</h2>
-      {posts.map((post) => (
-        <div key={post.post_id}>
-          <h3>{post.title}</h3>
-          <p>{post.text}</p>
-          <img src={post.image} alt={post.title} />
-        </div>
-      ))}
-
-      <h2>Replies</h2>
-      {replies.map((reply) => (
-        <div key={reply.reply_id}>
-          <p>{reply.text}</p>
-        </div>
-      ))}
-    </div>
-    </>
-  );
-}
-
-export default MissionaryData;
-
-*/
-
-const ProfilePage: React.FC = () => {
-  return (
-    <main className="flex flex-col items-center mx-auto w-full bg-white max-w-[480px]">
-      <StatusBar />
-      <ProfileHeader />
-      <ProfileInfo />
-      <PostsList />
-    </main>
-  );
+        </main>
+    );
 };
 
 export default ProfilePage;
-
