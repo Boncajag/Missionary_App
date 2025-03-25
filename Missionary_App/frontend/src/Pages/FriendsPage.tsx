@@ -15,8 +15,11 @@ const FriendsPage = () => {
                 ); // API endpoint
                 const data = await response.json(); // Parse the JSON response
 
-                // Set the posts in the state
-                setFriends(data.users); // Assuming the posts are in `data.posts`
+                // Filter users to include only those with user_id from 2 to 5
+                const filteredFriends = data.users.filter((user: User) => user.user_id >= 2 && user.user_id <= 6);
+
+                // Set the filtered friends in the state
+                setFriends(filteredFriends);
             } catch (error) {
                 console.error("Error fetching posts:", error);
             }
@@ -24,6 +27,7 @@ const FriendsPage = () => {
 
         fetchFriends(); // Call the function to fetch data
     }, []);
+
 
     return (
         <main className="flex flex-col items-center mx-auto w-full bg-white max-w-[480px] px-4">

@@ -13,10 +13,14 @@ interface User {
 }
 
 interface Post {
+    post_id: number;
     user_id: number;
-    created_at: string;
+    title: string;  // Add this line
     text: string;
+    image: string;
+    created_at: string;
 }
+
 
 // InboxPage Component
 const InboxPage: React.FC = () => {
@@ -89,13 +93,15 @@ const InboxPage: React.FC = () => {
                         }}
                     >
                         <PostCard
-                            avatarUrl={`/avatars/${post.user_id}.png`}  // Profile picture from the API
-                            name={`${post.first_name} ${post.last_name}`}  // Combine first and last names
-                            mission={post.mission}  // Mission from the user data
-                            date={new Date(post.created_at).toLocaleDateString()}  // Format the date
-                            message={post.text}  // Message from the post data
-                            images={[]} // Assuming no images for now
+                            avatarUrl={`/avatars/${post.user_id}.png`}
+                            name={`${post.first_name} ${post.last_name}`}
+                            mission={post.mission}
+                            date={new Date(post.created_at).toLocaleDateString()}
+                            title={post.title}  // Pass the title
+                            message={post.text}
+                            images={[]}
                         />
+
                     </motion.div>
                 ))}
             </motion.div>

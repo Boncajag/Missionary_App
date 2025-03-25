@@ -36,13 +36,15 @@ const ProfilePage = () => {
                         />
                     </div>
                     <div className="profile-info">
-                        {Object.entries(user).filter(([key]) => key !== "profile_picture").map(([key, value]) => (
-                            <div key={key} className="profile-pill">
-                                <span>{key.replace("_", " ")}: {String(value)}</span>
-                                <Pencil className="pencil-icon w-5 h-5"/>
+                        {Object.entries(user).filter(([key]) => key !== "profile_picture" && key !== "user_id").map(([key, value]) => (
+                            <div key={key} className="profile-info-item">
+                                <span className="profile-label">{key.replace("_", " ")}:</span>
+                                <div className="profile-pill">
+                                    <span>{key === "password" ? "●●●●●●●●" : String(value)}</span>
+                                    <Pencil className="pencil-icon w-5 h-5" />
+                                </div>
                             </div>
                         ))}
-
                     </div>
                 </div>
             )}

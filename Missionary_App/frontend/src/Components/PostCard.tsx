@@ -5,6 +5,7 @@ interface PostCardProps {
     name: string;
     mission: string;
     date: string;
+    title: string; // Added title prop
     message: string;
     images: string[];
 }
@@ -14,6 +15,7 @@ export const PostCard: React.FC<PostCardProps> = ({
                                                       name,
                                                       mission,
                                                       date,
+                                                      title,  // Added title prop
                                                       message,
                                                       images,
                                                   }) => {
@@ -33,7 +35,7 @@ export const PostCard: React.FC<PostCardProps> = ({
             {/* TOP SECTION: Profile Picture + Name/Mission/Date */}
             <div
                 className="flex items-center gap-4"
-                style={{display: "flex", alignItems: "center", gap: "16px"}}
+                style={{ display: "flex", alignItems: "center", gap: "16px" }}
             >
                 {/* Profile Picture (Circular) */}
                 <div style={{
@@ -59,17 +61,23 @@ export const PostCard: React.FC<PostCardProps> = ({
                 </div>
 
                 {/* Name, Mission, Date */}
-                <div className="flex flex-col -mt-1 -space-y-1">
-                    <h2 className="text-lg font-bold text-blue-950 leading-tight -m-0">{name}</h2>
-                    <p className="text-sm text-gray-600 leading-tight -mt-3">{mission}</p>
-                    <time className="text-xs text-gray-500 leading-tight -mt-1">{date}</time>
+                <div className="flex flex-col post-card-profile-info">
+                    <h2 className="text-lg font-bold text-blue-950 leading-tight">{name}</h2>
+                    <p className="text-sm text-gray-600 leading-tight">{mission}</p>
+                    <time className="text-xs text-gray-500 leading-tight">{date}</time>
                 </div>
             </div>
 
+            {/* POST TITLE */}
+            <h3 className="mt-4 text-md font-semibold text-blue-950"
+                style={{ marginTop: "25px", fontSize: "16px", color: "#111111111" }}>
+                {title}
+            </h3>
+
             {/* POST CONTENT: Message */}
             <p
-                className="mt-4 text-sm text-blue-950"
-                style={{marginTop: "16px", fontSize: "14px", color: "#002952"}}
+                className="mt-2 text-sm text-blue-950"
+                style={{ marginTop: "0px", fontSize: "14px", color: "#111111111" }}
             >
                 {message}
             </p>
