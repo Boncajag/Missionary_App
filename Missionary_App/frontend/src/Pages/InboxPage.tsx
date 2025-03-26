@@ -58,13 +58,13 @@ const InboxPage = () => {
               },
             }}
           >
-            <PostCard
-              avatarUrl={post.profile_picture}  // Profile picture from the API
+            <PostCard 
+                avatarUrl={`/avatars/${post.user_id}.png`}  // Profile picture from the API
               name={post.username}  // Username from the API
               mission={post.mission}  // Mission from the API
               date={new Date(post.created_at).toLocaleDateString()}  // Convert date to a readable format
               message={post.text}  // Message from the API
-              images={[post.image]}  // Assuming you only want one image for now
+                images={[]} // Assuming you only want one image for now
             />
           </motion.div>
         ))}

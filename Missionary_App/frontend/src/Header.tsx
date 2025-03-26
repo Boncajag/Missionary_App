@@ -15,7 +15,7 @@ const Header: React.FC = () => {
             </button>
             
             {/* Make logo a link to home */}
-            <Link to="/" className="logo-container">
+            <Link to="/inbox" className="logo-container">
                 <img src="/logo.png" alt="P-Day Post" className="logo" />
             </Link>
 
@@ -23,11 +23,12 @@ const Header: React.FC = () => {
             {menuOpen && (
                 <nav className="menu">
                     <ul>
-                        <li><Link to="/" onClick={() => setMenuOpen(false)}>Inbox</Link></li>
+                        <li><Link to="/inbox" onClick={() => setMenuOpen(false)}>Inbox</Link></li>
                         <li><Link to="/search" onClick={() => setMenuOpen(false)}>Search</Link></li>
                         <li><Link to="/friends" onClick={() => setMenuOpen(false)}>Friends</Link></li>
                         <li><Link to="/profile" onClick={() => setMenuOpen(false)}>Profile</Link></li>
                         <li><Link to="/write" onClick={() => setMenuOpen(false)}>Write</Link></li>
+                        <li><Link to="/login" onClick={() => setMenuOpen(false)}>Login</Link></li>
                     </ul>
                 </nav>
             )}
