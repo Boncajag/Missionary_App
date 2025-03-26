@@ -11,9 +11,9 @@ public class Post
     [Required]
     public int user_id  { get; set; }
     [Required]
-    public string? title  { get; set; }
+    public string title  { get; set; }
     [Required]
-    public string? text { get; set; }
+    public string text { get; set; }
     public byte[]? image { get; set; }
     [Required]
     public DateTime created_at { get; set; }

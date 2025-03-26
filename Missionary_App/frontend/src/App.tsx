@@ -10,6 +10,7 @@ import LoginPage from "./Pages/LoginPage";
 import ReadEmailPage from "./Pages/ReadEmailPage";
 
 function App() {
+
     return (
         <>
             <Header />
@@ -19,7 +20,6 @@ function App() {
                 <Route path="/friends" element={<FriendsPage />} />
                 <Route path="/profile" element={<ProfilePage />} />
                 <Route path="/write" element={<ComposePage />} />
-                <Route path="/compose" element={<ComposePage />} />
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/inbox" element={<InboxPage />} />
                 <Route path="/reademail" element={<ReadEmailPage />} />
