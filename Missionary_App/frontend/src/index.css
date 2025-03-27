@@ -183,6 +183,44 @@ input:hover {
   left: 0; /* Moves background in from left to right */
 }
 
+.secondary-button {
+  border-radius: 50px;
+  padding: 10px 15px; /* Reduced padding for smaller button */
+  width: 100%;
+  max-width: 150px; /* Reduced max-width to make the button narrower */
+  background: #002952; /* Dark Navy */
+  font-size: 14px; /* Reduced font size */
+  font-weight: normal;
+  border: 3px solid #002952;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease-in-out;
+  z-index: 1; /* Ensures text stays on top */
+  margin-right: 10px; /* Add a little gap between buttons */
+}
+
+.secondary-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%; /* Starts outside from the left */
+  width: 100%;
+  height: 100%;
+  background: white;
+  transition: left 0.4s ease-in-out; /* Moves from left to right */
+  z-index: -1; /* Ensures background is behind text */
+}
+
+.secondary-button:hover {
+  color: #002952 !important; /* Ensures text turns blue */
+}
+
+.secondary-button:hover::before {
+  left: 0; /* Moves background in from left to right */
+}
 
 .login-container {
   display: flex;
