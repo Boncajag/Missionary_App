@@ -436,7 +436,7 @@ input:hover {
   border: 0px solid var(--primary-color);
 }
 
-/* Profile Info Container */
+/* Profile Info - Align Left */
 .profile-info-container {
   display: flex;
   align-items: center; /* Align items vertically centered */
@@ -449,12 +449,12 @@ input:hover {
 
 
 
-/* Profile Info Text */
+/* Profile Info Text - Left aligned */
 .profile-info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start; /* Make sure text aligns to the left */
+  justify-content: flex-start;
+  align-items: flex-start; /* Ensure text aligns to the left */
   text-align: left; /* Explicitly set text alignment to left */
 }
 
@@ -506,23 +506,6 @@ input:hover {
   opacity: 0.7; /* Slight transparency for a softer look */
 }
 
-/* Post Button */
-.post-button {
-  background-color: var(--primary-color);
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 50px;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-top: 10px;
-}
-
-.post-button:hover {
-  background-color: #004080;
-}
-
 
 /* Inbox Page PostCard Text Spacing */
 .post-card-profile-info {
@@ -541,4 +524,83 @@ input:hover {
   margin: 0; /* Remove any default margin */
   line-height: 1.6; /* Reduce line height even more */
   padding: 0; /* Remove padding */
+}
+
+.my-posts-title {
+  color: #002952; /* Navy Blue */
+  font-weight: 700;
+  margin-top: 48px; /* Increase the margin to create more space */
+}
+
+
+
+
+.compose-title-input:hover {
+  background: #F5F5F5;
+}
+
+
+
+/* Adjust the main container for ComposePage */
+.compose-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 600px;  /* Increased width for more spacious design */
+  margin: 0 auto;
+  padding: 30px;  /* Add some padding for more breathing room */
+}
+
+/* Title Input Field */
+.compose-title-input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px; /* Adds space below title input */
+  border-radius: 20px;
+  border: 2px solid var(--primary-color);
+  background-color: #f0f0f0;
+  font-size: 1.1rem;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Body Textarea Field */
+.compose-textbox {
+  width: 100%;
+  max-width: 480px;  /* Adjust width */
+  padding: 15px;
+  height: 200px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  border: 2px solid var(--primary-color);
+  background-color: #f0f0f0;
+  font-size: 1.1rem;
+  resize: none;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.compose-textbox:focus {
+  background-color: #e5e5e5;
+}
+
+/* Post Button - Align Left */
+.post-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  margin-left: 0; /* Align button to the left */
+  text-align: left; /* Align text to the left inside the button */
+}
+
+.post-button:hover {
+  background-color: #004080;
 }

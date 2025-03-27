@@ -1,17 +1,17 @@
 import { useState } from "react";
-import { StatusBar } from "../Components/StatusBar";
 
 const ComposePage = () => {
+    const [postTitle, setPostTitle] = useState("");
     const [postContent, setPostContent] = useState("");
 
     const handlePost = () => {
+        console.log("Post title:", postTitle);
         console.log("Post content:", postContent);
         // Add your post submission logic here
     };
 
     return (
-        <main className="flex flex-col items-center justify-center mx-auto w-full bg-white max-w-[480px] px-4 py-8">
-            <StatusBar/>
+        <main className="compose-page-container">
             <div className="profile-info-container">
                 <div className="profile-image-container">
                     <img
@@ -27,6 +27,15 @@ const ComposePage = () => {
                     </p>
                 </div>
             </div>
+            {/* Title Input */}
+            <input
+                type="text"
+                className="compose-title-input"
+                placeholder="Title"
+                value={postTitle}
+                onChange={(e) => setPostTitle(e.target.value)}
+            />
+            {/* Body Text Area */}
             <textarea
                 className="compose-textbox"
                 placeholder="What's on your mind?"
@@ -40,7 +49,6 @@ const ComposePage = () => {
                 Post
             </button>
         </main>
-
     );
 };
 

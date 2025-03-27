@@ -48,7 +48,7 @@ const ProfilePage = () => {
                     </div>
                 </div>
             )}
-            <h2 className="text-2xl font-semibold text-blue-950 mt-8">My Posts</h2>
+            <h2 className="text-2xl font-semibold my-posts-title">My Posts</h2>
             <section className="flex flex-col items-center gap-4 mt-4 w-full">
                 {posts.map((post, index) => (
                     <motion.div

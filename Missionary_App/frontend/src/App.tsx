@@ -4,13 +4,12 @@ import InboxPage from "./Pages/InboxPage";
 import SearchPage from "./Pages/SearchPage";
 import FriendsPage from "./Pages/FriendsPage";
 import ProfilePage from "./Pages/ProfilePage";
-// import TemplatePage from "./Pages/TemplatePage";
 import ComposePage from "./Pages/ComposePage";
 import LoginPage from "./Pages/LoginPage";
 import ReadEmailPage from "./Pages/ReadEmailPage";
 
-function App() {
 
+function App() {
     return (
         <>
             <Header />
