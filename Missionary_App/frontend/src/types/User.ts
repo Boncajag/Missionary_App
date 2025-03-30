@@ -15,11 +15,14 @@ export interface User {
 
 export interface Post {
   post_id: number;
-  user_id: number;
   title: string;
+  user_id: number;
   text: string;
   image: string | null;
   created_at: string;
+  first_name: string;
+  last_name: string;
+  mission: string;
 }
 
 export interface Reply {
